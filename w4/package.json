@@ -4,9 +4,10 @@
   "description": "fun w express, sequelize, and react!",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "webpack -w & nodemon app.js",
     "build": "webpack",
-    "build-watch": "webpack -w"
+    "build-watch": "webpack -w",
+    "seed": "node ./db/seed.js"
   },
   "author": "myself",
   "license": "ISC",
@@ -22,6 +23,10 @@
     "pg": "^7.4.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "redux": "^4.0.0",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
     "sequelize": "^4.32.2"
   },
   "devDependencies": {
